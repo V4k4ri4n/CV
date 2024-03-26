@@ -1,36 +1,152 @@
 /******** GENERAL *********/
-:root{
-    --bleu : #235DDD;
-    --vert : #249C24
+:root {
+  --bleu: #235ddd;
+  --bleu-clair: #1b87df;
+  --bleu-ciel: #d4e4fb;
+  --vert: #249c24;
+  --blanc: #f4fee6;
+  --ombre-texte: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: var(--blanc);
 }
 
-body{
-    height: 100vh;
-    display: flex;
-    align-items: flex-end;
-    background-image: url('/img/fondxpclassique.jpeg');
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-image: url("/img/fondxpclassique.jpeg");
 }
 
-footer{
-    width: 100vw;
-    height: 30px;
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--bleu);
-    box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.7) inset; 
+footer {
+  width: 100vw;
+  height: 52px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bleu);
+  box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.7) inset;
+}
+
+/********* MENU ************/
+#menu {
+  height: 50vh;
+  width: 25rem;
+  background-color: var(--blanc);
+  display: flex;
+  flex-direction: column;
+}
+
+#menu > #utilisateur {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--bleu);
+  padding-left: 0.2rem;
+  height: 4rem;
+}
+
+#menu > #lien {
+  display: flex;
+  flex-grow: 1;
+}
+
+#lien > #moi {
+  background-color: var(--blanc);
+  width: 50%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#moi > div > a {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#moi > h4 {
+  color: black;
+}
+
+#moi > div > a > p {
+  color: black;
+  font-weight: 600;
+  padding-left: 0.2rem;
+}
+
+#lien > #projet-xp {
+  background-color: var(--bleu-ciel);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#projet-xp > h4 {
+  color: var(--bleu);
+}
+
+#menu > #logout {
+  background-color: var(--bleu);
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 0.2rem;
+}
+
+#photo-identite {
+  border-radius: 5px;
+  width: 3rem;
+  height: 3rem;
+}
+
+#nom-utilisateur {
+  text-shadow: var(--ombre-texte);
+  margin-left: 0.3rem;
 }
 
 /********* FOOTER *********/
 #menu-demarrer {
-    background-color: var(--vert);
-    box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.7) inset; 
-    display: flex;
-    align-items: center;
-    border-radius: 0px 10px 10px 0px;
+  background-color: var(--vert);
+  width: 10vw;
+  box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.7) inset;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 0px 10px 10px 0px;
+}
+
+#menu-icone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10vw;
+  background-color: var(--bleu-clair);
+}
+
+#menu-demarrer > p {
+  color: var(--blanc);
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 500;
+  text-shadow: var(--ombre-texte);
+}
+
+#menu-icone > p {
+  color: var(--blanc);
+}
+
+#logo-windows {
+  width: 3rem;
+  height: 3rem;
 }
