@@ -1,71 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
-    <script defer src="/script.js"></script>
-    <title>Mon CV</title>
-  </head>
-  <body>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/windowsxp.css">
+    <script type="module" defer src="/js/script.js"></script>
+    <title>Windows CV</title>
+</head>
+<body>
+
+    <!-- MENU-->
     <div id="menu">
-      <div id="utilisateur">
-        <img id="photo-identite" src="/img/garrus.jpg" alt="photo identité" />
-        <p id="nom-utilisateur">Pierre Mongiorgi</p>
-      </div>
-      <div id="lien">
-        <div id="moi">
-          <!-- MON CV -->
-          <h4>Mon CV</h4>
-          <div class="lien-cv">
-            <a id="apropos">
-              <img src="/img/icon/profil.png" alt="" />
-              <p>A propos</p>
-            </a>
-          </div>
-          <div class="lien-cv">
-            <a id="parcours">
-              <img src="/img/icon/destination .png" alt="" />
-              <p>Mon parcours</p>
-            </a>
-          </div>
-          <div class="lien-cv">
-            <a id="expériences">
-              <img src="/img/icon/mallette.png" alt="" />
-              <p>Mes expériences</p>
-            </a>
-          </div>
-          <div class="lien-cv">
-            <a id="competences">
-              <img src="/img/icon/programmation.png" alt="" />
-              <p>Mes compétences</p>
-            </a>
-          </div>
-          <div class="lien-cv">
-            <a id="passions">
-              <img src="/img/icon/passion.png" alt="" />
-              <p>Mes passions</p>
-            </a>
-          </div>
+        <!--UTILISATEUR-->
+        <div id="utilisateur">
+            <img id="avatar" src="/img/garrus.jpg" alt="icone utilisateur">
+            <p>Pierre Mongiorgi</p>
+        </div>
+        <!--PROGRAMME-->
+        <div id="programme">
+            <div id="mon-cv">
+                <h5>Mon CV</h5>
+                <ul id="programme-cv">
+                    <li>
+                        <img src="/img/icon/profil.png" alt="">
+                        <p>A Propos</p>
+                    </li>
+                    <li>
+                        <img src="/img/icon/destination.png" alt="">
+                        <p>Mon Parcours</p>
+                    </li>
+                    <li>
+                        <img src="/img/icon/mallette.png" alt="">
+                        <p>Mes Expériences</p>
+                    </li>
+                    <li>
+                        <img src="/img/icon/programmation.png" alt="">
+                        <p>Mes Formations</p>
+                    </li>
+                    <li>
+                        <img src="/img/icon/passion.png" alt="">
+                        <p>Mes Passions</p>
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                        <p>Autre</p>
+                    </li>
+                </ul>
+            </div>
+            <div id="mes-projets">
+                <h5>Mes Projets</h5>
+                <ul id="programme-projet">
+                </ul>
+            </div>
         </div>
 
-        <!-- MES PROJETS-->
-        <div id="projet-xp">
-          <h4>Mes projets</h4>
+        <!--DECONNEXION-->
+        <div id="deconnexion">
+            
         </div>
-      </div>
-
-      <div id="logout"></div>
     </div>
-    <footer>
-      <div id="menu-demarrer" onclick="afficherMenu()">
-        <img id="logo-windows" src="/img/logoxp.png" alt="logo windows" />
-        <p>démarrer</p>
-      </div>
-      <div id="projet"></div>
-      <div id="menu-icone">
-        <p id="date-heure"></p>
-      </div>
+
+    <!-- BARRE DES TACHES-->
+    <footer id="barre-des-taches">
+        <!--BOUTON DEMARRER-->
+        <div id="menu-demarrer">
+            <img id="logo-windows" src="/img/logoxp.png" alt="icone windows">
+            <p>démarrer</p>
+        </div>
+        <!--ONGLET FENETRE-->
+        <div id="onglet">
+            
+        </div>
+        <!--ICONE/DATE-->
+        <div id="icone-date">
+            <div id="icone">
+
+            </div>
+            <div id="date">
+
+            </div>
+        </div>
     </footer>
-  </body>
+</body>
 </html>
