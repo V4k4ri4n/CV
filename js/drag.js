@@ -1,15 +1,7 @@
-   import * as dateWindows from './date.js';
-   
- 
    // Sélectionnez l'élément draggable
     var draggableDiv = document.getElementById('fentest');
 
-    // Variables pour stocker les positions initiales de la souris et de la div
-    var initialX;
-    var initialY;
-    var offsetX = 0;
-    var offsetY = 0;
-    var isDragging = false;
+
 
     // Fonction pour démarrer le déplacement
     function startDrag(e) {

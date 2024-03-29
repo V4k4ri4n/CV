@@ -13,6 +13,3 @@ export function actualiseHeure(){
     const champHeure = document.getElementById('date');
     champHeure.innerText = obtenirHeure();
 }
-actualiseHeure();
-
-setInterval(actualiseHeure,1000);

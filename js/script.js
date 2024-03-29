@@ -1,20 +1,12 @@
 import * as dateWindows from './date.js';
 import * as event from './event.js';
+import * as morpion from './morpion.js';
+
+dateWindows.actualiseHeure();
+setInterval(dateWindows.actualiseHeure,1000);
 
 const menuWindows = document.getElementById("menu");
 menuWindows.style.display = "none";
 
-function ouvreAPropos() {
-  const fenetre = creerfenetre();
-  document.body.appendChild(fenetre);
-}
-
-function creerfenetre() {
-  const fenetre = document.createElement("div");
-  fenetre.style.backgroundColor = "yellow";
-  fenetre.style.width = "20rem";
-  fenetre.style.height = "20rem";
-  fenetre.style.alignSelf = "center";
-  return fenetre;
-}
-
+const jeuMorpion = document.getElementById('morpion');
+jeuMorpion.addEventListener('click',morpion.ouvreMorpion);

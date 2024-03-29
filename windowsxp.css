@@ -107,6 +107,19 @@ footer {
   flex-grow: 1;
 }
 
+#programme-projet > li{
+  display: flex;
+  align-items: center;
+  padding: 0.5vw 0;
+}
+
+#programme-projet {
+  font-size: 0.75rem;
+  margin-left: 0.5vw;
+  color: black;
+  font-weight: 700;
+}
+
 /*div deconnexion*/
 #deconnexion {
   background-color: var(--bleu);
